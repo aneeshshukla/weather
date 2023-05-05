@@ -1,0 +1,1 @@
+const apiKey = "&appid=b98b55d47c726b7f068ddb6f44c39d6d";

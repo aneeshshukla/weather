@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+* {
+    color: white;
+    transition: 0.25s;
+    font-family: 'Inter', sans-serif;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #253144;
+    display: flex;
+    justify-content: center;
+    transition: 0.25s;
+
+}
+
+.weathercard {
+    /* height: 500px; */
+    height: fit-content;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    width: 370px;
+    background: rgb(14, 129, 207);
+    background: linear-gradient(320deg, rgb(95, 13, 143) 0%, rgb(62, 205, 155) 100%);
+    border-radius: 25px;
+
+    /* width: 380px; */
+    margin: 0;
+    position: absolute;
+    top: 47%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    /* background-color: #2a3b57; */
+    justify-content: center;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* height: 60px; */
+    background-color: #2a3b57;
+    color: white;
+    text-align: center;
+}
+
+#add {
+    /* background-color: #253144; */
+    background-color: rgba(255, 255, 255, 0.762);
+    color: rgb(62, 62, 62);
+    border: 2px solid #0ec497;
+    /* margin-top: 40px; */
+    border-radius: 25px;
+    height: 35px;
+    width: 240px;
+    outline: none;
+    text-align: center;
+    font-size: larger;
+}
+
+#add:focus {
+    height: 35px;
+    border-color: #0e7bc4;
+    background-color: white;
+    
+}
+
+#add:hover {
+    height: 35px;
+    border-color: #0e7bc4;
+    
+}
+
+#addsave {
+    background-color: rgba(255, 255, 255, 0.762);
+    color: rgb(62, 62, 62);
+    border: 1px solid #253144;
+    height: 40px;
+    width: 40px;
+    margin-left: 5px;
+    border-radius: 25px;
+    text-align: center;
+
+}
+
+#addsave:hover {
+    height: 40px;
+    width: 40px;
+    background-color: #ffffff;
+    border: 1px solid #0e5a8c;
+    cursor: pointer;
+}
+
+#addsave img {
+    height: 20px;
+
+}
+
+#weathericon {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 100px;
+    width: 100px;
+}
+
+#details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-top: 30px;
+}
+#col{
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+#col img{
+    width: 50px;
+    margin-right: 10px
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin: 0;
+    margin-top: -6px;
+}
+#col div p{
+    margin: 0;
+}

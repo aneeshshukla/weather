@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiz-Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/icon.png">
+</head>
+
+<body>
+
+    <div class="weathercard">
+        <center>
+            <input type="text" id="add" placeholder="Enter City Name">
+            <button title="Get Weather from Search" id="addsave" onclick="getweather()"><img src="images/search.png"></button>
+            <button title="Get Weather from Location" id="addsave" onclick="mygeolocater()"><img src="images/map.png"></button>  
+            <img class="weathericon" id="weathericon" src="images/icon.png">
+            <p class="climateinfo" style="text-transform: capitalize; margin: 0; padding: 0; color: white; /*float: right; margin-top: 10px; */ margin-bottom: -20px;"></p>
+
+            <p class="temp" style=" display:none; color: white;padding: 0;margin: 0; margin-top: 18px; font-size: 60px;">°c</p>
+            <p class="cityname" style="padding: 0;margin: 0; color: white; font-size: 25px;"></p>
+
+            <div id="details" style="display: none;">
+                <div class="humid" id="col" title="Humdity">
+                    <img src="images/humidity.png">
+                    <div>
+                        <p class="humidity">%</p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="windy" id="col" title="Wind Speed">
+                    <img src="images/wind.png">
+                    <div>
+                        <p class="wind">km/h</p>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <p class="infoshow" id="infoshow" style="margin: 0; padding: 0; color: rgb(199, 199, 199); /*float: right;*/ margin-top: 10px;">
+                 Checking Browser...<br>Wait 10 secs or try reloading if not responding
+            </p>
+        </center>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <p>Image Credits:
+            <a target="_blank" style="color: white;"
+                href="https://drive.google.com/file/d/1RgSeYljIBzh-ZHIzEFwWmfGIDEMF1bHr/view">Easy Tutorials</a>
+            <a target="_blank" style="color: white;" href="https://www.flaticon.com/">Flaticon</a>
+        </p>
+    </footer>
+</body>
+
+
+
+<script src="actions.js"></script>
+<script src="data.js"></script>
+<script>
+    
+    // document.getElementById("add").focus();
+    var input = document.getElementById("add");
+    input.addEventListener("keypress", function (event) {
+        if (event.key === "Enter") {
+            event.preventDefault();
+            document.getElementById("addsave").click();
+        }
+    });
+</script>
+
+</html>
