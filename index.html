@@ -8,6 +8,7 @@
     <title>Wiz-Weather</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -76,7 +77,9 @@
 <script src="actions.js"></script>
 <script src="data.js"></script>
 <script>
-    
+    if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/service-worker.js') ;
+    }
     // document.getElementById("add").focus();
     var input = document.getElementById("add");
     input.addEventListener("keypress", function (event) {
@@ -85,6 +88,7 @@
             document.getElementById("addsave").click();
         }
     });
+
 </script>
 
 </html>
