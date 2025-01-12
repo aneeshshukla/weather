@@ -1,1 +1,1 @@
-Visit website 👉🏽 wizard7979.github.io/weather
+Visit website 👉🏽 aneeshshukla.github.io/weather
