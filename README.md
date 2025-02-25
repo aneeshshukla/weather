@@ -1,1 +1,1 @@
-Visit website 👉🏽 [Here](aneeshshukla.guthub.io/weather)
+Visit website 👉🏽 [Here](aneeshshukla.github.io/weather)
